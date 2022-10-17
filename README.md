@@ -61,4 +61,4 @@ and more!
 21. [0x14-javascript-web_scraping](./0x14-javascript-web_scraping)
 
 ## Credits
-Work is owned and maintained by Alexa Orrico ([@alexaorrico](https://twitter.com/alexaorrico)).
+Work is owned and maintained by Ajibade Abdulmatin Aekola
