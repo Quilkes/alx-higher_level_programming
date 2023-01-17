@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+"""
+takes in a string and sends a search request to the Star Wars API
+"""
+if __name__ == '__main__':
+    import requests
+    from sys import argv
+    r = requests.get('https://swapi.co/api/people', params={'search': argv[1]})
+    people = r.json()
+    print("Number of results: {}".format(people.get('count')))
+    for person in people.get('results'):
+        print(person.get('name'))
