@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """
-fetches https://intranet.hbtn.io/status
+fetching https://intranet.hbtn.io/status using python lang
+
 """
 if __name__ == "__main__":
     import urllib.request as request
-    with request.urlopen('https://intranet.hbtn.io/status') as r:
-        html = r.read()
+    with request.urlopen('https://intranet.hbtn.io/status') as doc:
+        html = doc.read()
         print('Body response:')
         print("\t- type: {}".format(type(html)))
         print("\t- content: {}".format(html))
